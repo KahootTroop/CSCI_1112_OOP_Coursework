@@ -93,13 +93,14 @@ public class TicTacToe extends Application {
 			if(isWon(currentTurn)) {
 				if(currentTurn == 'X') {
 					turn.setText("Game Over! " + names[0] + " Wins");
+					currentTurn = 'n';
 				}
 				else {
 					turn.setText("Game Over! " + names[1] + " Wins");
+					currentTurn = 'n';
 				}
-				currentTurn = 'n';
 			}
-			else {
+			else if(!isWon(currentTurn)){
 				if(currentTurn == 'X') {
 					currentTurn = 'O';
 					turn.setText("It is " + names[1] + "'s turn");
@@ -114,6 +115,7 @@ public class TicTacToe extends Application {
 			return symbol;
 		}
 		public void fillCell(char s) {
+			symbol = s;
 			if(s == 'X') {
 				Line one = new Line(10, 10, this.getWidth() - 10, this.getHeight() - 10);
 				one.endXProperty().bind(this.widthProperty().subtract(10));
