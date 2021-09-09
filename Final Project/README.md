@@ -16,13 +16,13 @@ This piece of code checks every cell in the grid to see if a tile has been place
 If every cell has a tile assigned to it this method returns true and the game is a draw.
 ```
 public boolean isDraw() {
-			for(int i = 0; i < 3; i++) {
-				for(int j = 0; j < 3; j++) {
-					if(cell[i][j].getSymbol() == 'n') {
-						return false;
-					}
-				}
+	for(int i = 0; i < 3; i++) {
+		for(int j = 0; j < 3; j++) {
+			if(cell[i][j].getSymbol() == 'n') {
+				return false;
 			}
-			return true;
 		}
+	}
+	return true;
+}
 ```
