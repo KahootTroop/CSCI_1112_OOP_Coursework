@@ -9,6 +9,7 @@ This project was made with JavaFX to demonstrate some of the new things I learne
 ## How to Run
 To play this game you just need one computer for the players to share. 
 Each player will enter their name and then take turns placing tiles on the game board to try and get 3 in a row.
+
 <img src="GamePlay.png"/>
 
 ## Code Example
