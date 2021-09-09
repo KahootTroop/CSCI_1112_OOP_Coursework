@@ -174,7 +174,7 @@ public class TicTacToe extends Application {
 					circle.radiusXProperty().bind(this.widthProperty().divide(2).subtract(30));
 					circle.radiusYProperty().bind(this.heightProperty().divide(2).subtract(10));
 					circle.setStroke(Color.RED);
-					circle.setFill(Color.WHITE);
+					circle.setFill(Color.TRANSPARENT);
 					this.getChildren().addAll(circle);
 				}
 			}
